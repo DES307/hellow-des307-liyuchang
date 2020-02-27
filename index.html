@@ -4,6 +4,7 @@
 <!-- ------------------------------ HEAD ----------------------------------- -->
 <!-- head section does not produce visible content -->
 	<head>
+		<link rel="stylesheet" href="css/style.css" 
 	 <!-- Title, visible to search engines and in the browser tab -->
 		<title>Document Title DES221</title>
     <!-- 'meta' details about this webpage -->
@@ -17,7 +18,22 @@
 		<!-- your stylesheet -->
 		<!-- CRITICAL JAVASCRIPT non critical scripts should be at the end of the 
       body-->
-		<!-- <script src="js/critical-scripts.js" type="text/javascript"></script> -->
+	
+	<script>
+	 	
+
+		function myFunction() {
+			setTimeout(function(){ alert("wakeUpUser"); }, 3000);
+		}
+
+		setTimeout(wakeUpUser, 5000); 
+		function wakeUpUser() { 
+			alert("Are you going to stare at this boring page forever?");
+		 }
+
+
+	</script>
+
 	</head>
 <!-- ------------------------------ BODY ----------------------------------- -->	
 	<body>
@@ -32,14 +48,26 @@
 				<ul>
 					<li>Make a website</li>
 					<li>Target photographers</li>
-					<li></li>
+					<li>3d printing</li>
 				</ul>
+			</div>
 
+			<div class="alert">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+			</div>
+
+			<div>
+				<button onclick="myFunction()">Try it</button>
+	
+				
+				
 				
 			</div>
 		</main>
 
-
+		
+		
 		<!-- this is where non-load-critical javascript should be placed i.e. the document can sill load properly with out it -->
 		<!--		<script src="js/scripts.js" type="text/javascript"></script>-->
 	</body>
